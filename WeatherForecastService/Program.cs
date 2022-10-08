@@ -1,3 +1,5 @@
+using WeatherForecastService.Models;
+
 namespace WeatherForecastService
 {
     public class Program
@@ -11,7 +13,7 @@ namespace WeatherForecastService
             builder.Services.AddControllers();
 
 
-
+            builder.Services.AddSingleton<WeatherForecastHolder>();
 
 
 
